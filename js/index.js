@@ -5,6 +5,7 @@ import { addBord, init, update } from './mainView.js';
 import { Eagle } from "./bird/eagle.js";
 import { Pigeon } from "./bird/pigeon.js";
 import { Owl } from "./bird/owl.js";
+import { getRandomPackage } from './Package.js';
 
 
 const tickEvent = new Event();
