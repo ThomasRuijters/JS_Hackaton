@@ -6,7 +6,10 @@ import { Eagle } from "./bird/eagle.js";
 import { Pigeon } from "./bird/pigeon.js";
 import { Owl } from "./bird/owl.js";
 import { getRandomPackage } from './Package.js';
+import { WeakPistol } from "./gun/pistol.js";
+import { Game } from "./game.js";
 
+const game = Game.getGame();
 
 const tickEvent = new Event();
 const timer = new Timer(tickEvent);
