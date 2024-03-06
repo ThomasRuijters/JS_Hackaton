@@ -4,6 +4,7 @@ export class Bord {
     speed;
     health;
     package;
+    score;
 
     constructor(type) {
         this.type = type;

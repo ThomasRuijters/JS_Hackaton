@@ -1,4 +1,5 @@
 import { Game } from './game.js';
+import { View } from './view.js';
 
 const pewAudio = new Audio('./audio/pew-effect.mp3');
 const game = Game.getGame();
@@ -10,16 +11,20 @@ document.addEventListener('click', function(event) {
     if(!bird) {
         return;
     }
-
-    console.log(game);
+    
     const gun = game.gun;
     gun.shoot(bird);
 
     if(bird.health <= 0) {
+        game.score += bird.score;
         document.getElementById('container')
             .removeChild(event.target);
         createExplosion(event);
+    } else {
+        game.score += 1;
     }
+    
+    View.changeCounter();
 });
 
 let counter = 0;

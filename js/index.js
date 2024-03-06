@@ -10,11 +10,11 @@ const container = document.getElementById("container");
 const view = new View();
 const game = Game.getGame();
 
+container.appendChild(view.createMainView());
+
 const eagle = view.createBirdView(new Eagle());
 container.appendChild(eagle);
 container.appendChild(view.createBirdView(new Pigeon()));
 container.appendChild(view.createBirdView(new Owl()));
-
-container.appendChild(view.createGunView(new WeakPistol()))
 
 console.log(getRandomPackage());
