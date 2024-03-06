@@ -1,4 +1,4 @@
-export class entity {
+export class Entity {
     x;
     y;
 
