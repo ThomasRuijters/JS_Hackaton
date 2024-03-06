@@ -3,7 +3,7 @@ export class Timer {
     tickEvent;
 
     timerId;
-    tickSpeed = 1000;
+    tickSpeed = 16;
     timerPaused = false;
 
     constructor(event) {

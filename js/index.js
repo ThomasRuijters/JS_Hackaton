@@ -1,12 +1,21 @@
-import { View } from "./view.js";
+import Event from './event.js';
+import Timer from './timer.js';
+
+import { addBord, init, update } from './mainView.js';
 import { Eagle } from "./bird/eagle.js";
 import { Pigeon } from "./bird/pigeon.js";
 import { Owl } from "./bird/owl.js";
 
 
-const container = document.getElementById("container");
-const view = new View();
-const eagle = view.createBirdView(new Eagle());
-container.appendChild(eagle);
-container.appendChild(view.createBirdView(new Pigeon()));
-container.appendChild(view.createBirdView(new Owl()));
+const tickEvent = new Event();
+const timer = new Timer(tickEvent);
+timer.start()
+
+init();
+tickEvent.addEventListener('tick', update );
+
+
+// const eagle = new Eagle();
+// const pigeon = new Pigeon();
+// const owl = new Owl();
+// addBord(eagle)
