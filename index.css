@@ -17,3 +17,12 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.game-ui {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
