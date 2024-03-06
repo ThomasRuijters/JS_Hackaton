@@ -1,9 +1,14 @@
 export class Bord {
     type;
     img;
+    speed;
     #health;
     #package;
-    
+
+    constructor(type) {
+        this.type = type;
+    }
+
     grabPackage() {
 
     }
@@ -16,7 +21,7 @@ export class Bord {
 }
 
 export class BordType {
-    pigeon = "pigeon";
-    eagle = "eagle";
-    owl = "owl";
+    static pigeon = "pigeon";
+    static eagle = "eagle";
+    static owl = "owl";
 }
