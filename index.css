@@ -34,15 +34,8 @@ main {
     position: absolute;
     top: 5px;
     left: 5px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: auto;
-    padding: 0 20px;
-    background-color: #0d043d;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width: 100vw;
 }
 
 h1 {
