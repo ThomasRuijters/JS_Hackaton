@@ -1,4 +1,5 @@
 import { View } from "./view.js";
+import { getRandomPackage } from "./Package.js";
 
 const container = document.querySelector('#container');
 let belts = [];
@@ -19,7 +20,7 @@ export function update() {
 
         packageBox.style.transform = 'translateX(' + newTranslateXValue + 'px)';
 
-        if (newTranslateXValue >= 600) {
+        if (newTranslateXValue >= screen.width) {
             packageBox.remove();
             packages.pop(packageBox);
             createPackage();
@@ -43,12 +44,19 @@ function createBelt() {
 }
 
 export function createPackage() {
-    let packageBox = document.createElement('div'); // CUSTOMIZE THIS
+    let packageObj = getRandomPackage();
     
-    packageBox.style.backgroundColor = "blue";
-    packageBox.style.padding = "10px";
-    packageBox.style.width = "10px";
-    packageBox.style.height = "10px";
+    let packageBox = document.createElement('div'); // CUSTOMIZE THIS
+
+    const img = document.createElement('img');
+    img.src = 'img/conveyor-belt/package.png';
+    img.style.width = '100%';
+    packageBox.appendChild(img);
+
+    
+    packageBox.style.width = "60px";
+    packageBox.style.height = "60px";
+    packageBox.style.transform = 'translateX(' + -100 + 'px)';
 
     belts.forEach(belt => {
         belt.appendChild(packageBox)
