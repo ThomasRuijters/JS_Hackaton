@@ -1,9 +1,13 @@
-.bord {
-    width: 100px;
-    height: 100px;
+* {
+    cursor: url('./img/crosshair.png'), auto;
 }
 
-.bord img {
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.bord, .bord img {
     width: 100px;
     height: 100px;
 }
