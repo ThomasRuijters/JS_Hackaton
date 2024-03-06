@@ -10,7 +10,7 @@ let packages = [];
 
 export function init() {
     parent.style.position = "fixed";
-    parent.style.bottom = "5%";
+    parent.style.bottom = "45%";
     parent.style.width = "100vw";
     container.appendChild(parent);
 
