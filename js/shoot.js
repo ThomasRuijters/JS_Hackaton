@@ -2,6 +2,7 @@ const pewAudio = new Audio('./audio/pew-effect.mp3');
 
 document.addEventListener('click', function(event) {
     pewAudio.play();
+    console.log(event.target.bird);
     onBirdDeath(event);
 });
 
