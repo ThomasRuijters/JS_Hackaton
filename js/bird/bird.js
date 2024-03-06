@@ -15,8 +15,8 @@ export class Bord {
     dropPackage() {
 
     }
-    kill() {
-
+    damage(damage) {
+        this.health -= damage;
     }
 }
 

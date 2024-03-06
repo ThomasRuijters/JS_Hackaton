@@ -17,3 +17,12 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.gun {
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
