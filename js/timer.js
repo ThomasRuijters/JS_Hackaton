@@ -2,7 +2,7 @@ export class Timer {
     #listeners;
     tickEvent;
 
-    timeId;
+    timerId;
     tickSpeed = 1000;
     timerPaused = false;
 
