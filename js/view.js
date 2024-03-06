@@ -12,4 +12,14 @@ export class View {
     
         return elem;
     }
+
+    createGunView(gun) {
+        const elem = document.createElement('div');
+        elem.classList.add('gun');
+        
+        elem.style.backgroundImage = 'url(img/guns/' + gun.img + ".gif)";
+        elem.gun = gun;
+    
+        return elem;
+    }
 } 
