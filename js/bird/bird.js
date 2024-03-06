@@ -2,8 +2,8 @@ export class Bord {
     type;
     img;
     speed;
-    #health;
-    #package;
+    health;
+    package;
 
     constructor(type) {
         this.type = type;
