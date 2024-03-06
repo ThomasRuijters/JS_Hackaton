@@ -36,11 +36,13 @@ export function addBord(type) {
 function createBelt() {
     let belt = document.createElement('div'); // CUSTOMIZE THIS
 
-
-    belt.style.backgroundImage = "url('./img/conveyor-belt/conveyor-belt-gif.gif')";
-    belt.style.backgroundSize = "cover"; 
+    belt.style.backgroundImage = "url('./img/conveyor-belt/conveyor-belt.webp')";
+    belt.style.backgroundSize = "contain"; 
     belt.style.backgroundColor = "orange";
+    belt.style.height = "5px";
+    belt.style.marginTop = "100px";
     belt.style.padding = "10px";
+    belt.style.marginLeft
 
     container.appendChild(belt)
     belts.push(belt);
@@ -60,6 +62,7 @@ export function createPackage() {
     
     packageBox.style.width = packageObj.width * 3 + "px";
     packageBox.style.height = packageObj.height * 3 + "px";
+    packageBox.style.marginTop = "-58px";
     packageBox.style.transform = 'translateX(' + -100 + 'px)';
 
     belts.forEach(belt => {
