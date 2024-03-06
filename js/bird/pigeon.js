@@ -1,10 +1,10 @@
-import { Bord, BordType } from "./bird";
+import { Bord, BordType } from "./bird.js";
 
-export class pigeon extends Bord {
+export class Pigeon extends Bord {
     constructor() {
         super(BordType.pigeon);
         this.health = 3;
         this.speed = 1;
-        this.img = "pigeon.png";
+        this.img = "pigeon";
     }
 }
