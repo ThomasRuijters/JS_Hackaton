@@ -24,4 +24,3 @@ export function setScore(amount) {
 function scoreChanged() {
     scoreText.textContent = "Score: " + score.score;
 }
-
