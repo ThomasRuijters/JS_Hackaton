@@ -6,5 +6,6 @@ export class Owl extends Bord {
         this.health = 2;
         this.speed = 1.5;
         this.img = "owl";
+        this.score = 2;
     }
 }

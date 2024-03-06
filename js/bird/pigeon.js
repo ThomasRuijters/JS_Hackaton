@@ -6,5 +6,6 @@ export class Pigeon extends Bord {
         this.health = 1;
         this.speed = 1;
         this.img = "pigeon";
+        this.score = 1;
     }
 }

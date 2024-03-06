@@ -2,6 +2,7 @@
     cursor: url('./img/crosshair.png'), auto;
     padding: unset;
     margin: unset;
+    overflow: hidden;
 }
 
 main {
@@ -19,8 +20,10 @@ main {
 }
 
 .gun {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
 
     display: flex;
     background-size: contain;

@@ -6,10 +6,12 @@ export class Game {
     belt;
     birds;
     packages;
+    score;
 
     constructor() {
         Game.#game = this;
         this.gun = new WeakPistol();
+        this.score = 0;
     }
 
     static getGame() {
