@@ -1,14 +1,26 @@
+import { Game } from './game.js';
+
 const pewAudio = new Audio('./audio/pew-effect.mp3');
+const game = Game.getGame();
 
 document.addEventListener('click', function(event) {
     pewAudio.play();
-    console.log(event.target.bird);
-    onBirdDeath(event);
-});
+    const bird = event.target.bird;
 
-function onBirdDeath(event) {
-    createExplosion(event);
-}
+    if(!bird) {
+        return;
+    }
+
+    console.log(game);
+    const gun = game.gun;
+    gun.shoot(bird);
+
+    if(bird.health <= 0) {
+        document.getElementById('container')
+            .removeChild(event.target);
+        createExplosion(event);
+    }
+});
 
 let counter = 0;
 
