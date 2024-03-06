@@ -55,12 +55,13 @@ export function createPackage() {
 
     const img = document.createElement('img');
     img.src = 'img/conveyor-belt/package.png';
-    img.style.width = '100%';
-    packageBox.appendChild(img);
-
+    img.style.width = packageObj.width * 3 + "px";
+    img.style.height = packageObj.height * 3 + "px";
     
-    packageBox.style.width = "60px";
-    packageBox.style.height = "60px";
+    packageBox.appendChild(img);
+    
+    packageBox.style.width = packageObj.width * 3 + "px";
+    packageBox.style.height = packageObj.height * 3 + "px";
     packageBox.style.marginTop = "-58px";
     packageBox.style.transform = 'translateX(' + -100 + 'px)';
 
