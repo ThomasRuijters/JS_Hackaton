@@ -1,5 +1,7 @@
 * {
     cursor: url('./img/crosshair.png'), auto;
+    padding: unset;
+    margin: unset;
 }
 
 main {
@@ -7,7 +9,11 @@ main {
     width: 100vw;
 }
 
-.bord, .bord img {
+.bord{
     width: 100px;
     height: 100px;
+
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
