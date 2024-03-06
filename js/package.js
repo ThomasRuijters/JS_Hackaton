@@ -14,8 +14,13 @@ export class Package {
     width;
     weight;
     points;
+    divObj;
     constructor(color) {
         this.color = color;
+    }
+
+    setDivObject(div) {
+        this.divObj = div;
     }
 }
 

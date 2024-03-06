@@ -19,7 +19,7 @@ init();
 tickEvent.addEventListener('tick', update );
 
 
-// const eagle = new Eagle();
+const eagle = new Eagle();
 // const pigeon = new Pigeon();
 // const owl = new Owl();
-// addBord(eagle)
+addBord(eagle)

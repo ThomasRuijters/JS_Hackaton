@@ -1,19 +1,24 @@
 export class ConveyorBelt{
     speed;
     length;
-    packageList;
+    packageList = [];
+    divObj;
 
     constructor(length) {
         this.length =length;
     }
 
-    addPackage(package){
-        this.packageList.push(package);
+    setDivObject(div) {
+      this.divObj = div;
     }
 
-    removePackage(package) {
+    addPackage(packageBox){
+        this.packageList.push(packageBox);
+    }
+
+    removePackage(packageBox) {
         for (var i = 0; i < this.packageList.length; i++) {
-          if (this.packageList[i].name === package.name) {
+          if (this.packageList[i].name === packageBox.name) {
             this.packageList.splice(i, 1);
             break;
           }
