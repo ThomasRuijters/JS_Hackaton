@@ -1,11 +1,11 @@
 export class PackageColor {
-    static red = "#d6271e";
-    static orange = "#d67a1e";
-    static yellow = "#d2d90f";
-    static green = "#38d415";
-    static blue = "#156bd4";
-    static purple = "#8b15d4";
-    static pink = "#d415c1";
+    static red = "333";
+    static orange = "307";
+    static yellow = "7";
+    static green = "78";
+    static blue = "173";
+    static purple = "234";
+    static pink = "271";
 }
 
 export class Package {

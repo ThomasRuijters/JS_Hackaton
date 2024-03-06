@@ -48,13 +48,13 @@ function createBelt() {
 
 export function createPackage() {
     let packageObj = getRandomPackage();
-    
     let packageBox = document.createElement('div'); // CUSTOMIZE THIS
 
     const img = document.createElement('img');
     img.src = 'img/conveyor-belt/package.png';
     img.style.width = packageObj.width * 3 + "px";
     img.style.height = packageObj.height * 3 + "px";
+    img.style.filter = "hue-rotate(" + packageObj.color + "deg)";
     
     packageBox.appendChild(img);
     
