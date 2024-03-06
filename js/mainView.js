@@ -48,11 +48,11 @@ function createBelt() {
     let beltObj = new ConveyorBelt(screen.width);
     let belt = document.createElement('div'); // CUSTOMIZE THIS
 
-    belt.style.backgroundImage = "url('./img/conveyor-belt/conveyor-belt.webp')";
+    belt.style.backgroundImage = "url('./img/conveyor-belt/belt.gif')";
     belt.style.backgroundSize = "contain"; 
     belt.style.backgroundColor = "orange";
-    belt.style.height = "5px";
-    belt.style.marginTop = "-16px";
+    belt.style.height = "30px";
+    belt.style.marginTop = "-46px";
     belt.style.padding = "10px";
     belt.style.position = "absolute";
     belt.style.width = "100vw";
