@@ -14,7 +14,6 @@ export class Package {
     width;
     weight;
     points;
-
     constructor(color) {
         this.color = color;
     }
