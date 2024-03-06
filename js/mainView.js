@@ -36,7 +36,10 @@ export function addBord(type) {
 function createBelt() {
     let belt = document.createElement('div'); // CUSTOMIZE THIS
 
-    belt.style.backgroundColor = "red";
+
+    belt.style.backgroundImage = "url('./img/conveyor-belt/conveyor-belt-gif.gif')";
+    belt.style.backgroundSize = "cover"; 
+    belt.style.backgroundColor = "orange";
     belt.style.padding = "10px";
 
     container.appendChild(belt)
